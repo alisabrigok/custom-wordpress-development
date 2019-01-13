@@ -1,0 +1,217 @@
+.merchants {
+  background-color: #fafafa;
+  padding-bottom: 3.4rem;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &__filter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 117rem;
+    margin: 0 auto;
+  }
+
+  .filter {
+    width: 100%;
+    height: 8rem;
+    background-color: #e5dcec;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.3rem;
+
+    &__text {
+      color: $primaryFontColor-Dark;
+      margin-left: 3rem;
+    }
+  }
+
+  .map {
+    width: 100%;
+    height: 60rem;
+    background-color: #cccccc;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 57rem;
+    margin: 0 auto
+  }
+
+  .registration-form {
+    &__header {
+      margin-top: 5rem;
+      text-align: center;
+    }
+
+    &__group {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  .form-header {
+    &__title {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .group {
+    &__label {
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 1.9;
+      letter-spacing: 0.6px;
+      color: $primaryFontColor-Dark;
+      margin-top: 2rem;
+    }
+
+    &__input {
+      width: 100%;
+      height: 5rem;
+      border: .2rem solid #c0c0c1;
+      border-radius: .6rem;
+      background-color: #ffffff;
+      font-size: 2rem;
+      padding-left: 1.5rem;
+
+      &::placeholder {
+        font-size: 2rem;
+        line-height: 1.9;
+        color: #060808;
+      }
+    }
+
+    &__button {
+      width: 100%;
+      height: 5rem;
+      border-radius: .6rem;
+      background-color: $primaryFontColor-Light;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.9;
+      color: #ffffff;
+      margin-top: 2rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__message {
+      width: 100%;
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      position: relative;
+
+      &--error {
+        background-color: #f2dede;
+        color: #a94442;
+      }
+
+      &--success {
+        background-color: #dff0d8;
+        color: #3c763d;
+      }
+    }
+  }
+}
+
+.info {
+  width: 26rem;
+  height: 18rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+
+  &:hover {
+    cursor: default;
+  }
+
+  &__close {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__container {
+    display: flex;
+    direction: rtl;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    max-width: 6.3rem;
+    max-height: 6.3rem;
+  }
+
+  &__title {
+    color: $primaryFontColor;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin-top: 1rem;
+    max-width: 85%;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    letter-spacing: 0.4px;
+    color: #231f20;
+    margin-top: 1rem;
+    max-width: 85%;
+  }
+}
+
+.pin {
+  &:hover {
+    cursor: pointer;
+  }
+  
+  &__location {
+    width: 3.4rem;
+    height: 4.6rem;
+  }
+
+  &__details {
+    position: absolute;
+    top: -200px;
+    left: -100px;
+  }
+}
+
+.close {
+  position: absolute;
+  top: -2px;
+  left: 97%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.wpcf7-form p {
+  margin-top: 1rem;
+}

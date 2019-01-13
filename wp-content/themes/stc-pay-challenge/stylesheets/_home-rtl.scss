@@ -1,0 +1,36 @@
+.rtl {
+  .merchants {
+    .filter {
+      justify-content: flex-end;
+  
+      &__text {
+        margin-right: 3rem;
+      }
+    }
+
+    .group {
+      &__label {
+        direction: rtl;
+      }
+  
+      &__input {
+        direction: rtl;
+        padding-right: 1.5rem;
+      }
+    }
+  }
+  
+  .info {
+    &__close {
+      left: 10%;
+    }
+  }
+  
+  .close {
+    left: 3%;
+  }
+
+  .wpcf7-response-output, .wpcf7-not-valid-tip, .wpcf7-form {
+    direction: rtl;
+  }
+}

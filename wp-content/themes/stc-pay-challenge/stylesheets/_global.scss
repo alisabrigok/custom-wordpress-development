@@ -1,0 +1,89 @@
+@font-face {
+  font-family: STC;
+  src: url(/stcpay/wp-content/themes/stc-pay-challenge/fonts/STC-Regular.ttf);
+}
+@font-face {
+  font-family: STC;
+  src: url(/stcpay/wp-content/themes/stc-pay-challenge/fonts/STC-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: STC;
+  src: url(/stcpay/wp-content/themes/stc-pay-challenge/fonts/STC-Bold.ttf);
+  font-weight: bold;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: STC, verdana, sans-serif;
+  box-sizing: border-box;
+  background-color: $themeColor-Light;
+}
+
+p,
+a,
+div {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+.stc-h1 {
+  font-size: 4.4rem;
+  font-weight: 500;
+  line-height: 0.91;
+  letter-spacing: 1.3px;
+  color: $primaryFontColor;
+}
+
+.stc-h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.58;
+  letter-spacing: 0.7px;
+}
+
+.content {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.rtl {
+  .content {
+    direction: rtl;
+  }
+}
