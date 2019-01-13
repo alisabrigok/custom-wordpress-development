@@ -5,16 +5,19 @@ var $contentContainer = $('#content-container');
 
 var isRtlEnabled = localStorage.getItem('isRTL');
 
-if (isRtlEnabled) $contentContainer.addClass('rtl');
+if (isRtlEnabled) {
+  $contentContainer.addClass('rtl');
+  translateContent();
+}
 
 $languageContainer.on('click', function() {
   if (isRtlEnabled) {
     localStorage.setItem('isRTL', '');
+    window.location.replace("http://localhost:8888/stcpay/");
   } else {
     localStorage.setItem('isRTL', 'true');
+    window.location.replace("http://localhost:8888/stcpay/ar");
   }
-  
-  $contentContainer.toggleClass('rtl');
 });
 
 var $map = $('#map');
@@ -58,4 +61,17 @@ if ($map) {
     nearDistance: 1,
     limit: 100
   });
+}
+
+function translateContent() {
+  $('#language-switcher').text('English');
+  $('#merchants-title').text('مواقع التجار');
+  $('#filter-text').text('تصفية');
+  $('#form-title').text('تسجيل التجار');
+  $('#form-desc').text('أخبرنا عن الماركات التي ترغب انت تجدها على STC PAY NETWORK');
+  $('#copyright-text').text('© 2019 المدفوعات الرقمية السعودية. جميع الحقوق محفوظة');
+  $('#social-title').text('تابعنا');
+  $('#app-title').text('حمل التطبيق');
+  $('#form-ltr').hide();
+  $('#form-rtl').show();
 }

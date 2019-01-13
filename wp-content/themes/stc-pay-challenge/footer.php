@@ -31,7 +31,7 @@
             </div>
           </div>
           <div class="footer__menu--cta cta">
-            <div class="cta__social--title">Follow Us</div>
+            <div class="cta__social--title" id="social-title">Follow Us</div>
             <div class="cta__social--icons">
               <a href="https://www.facebook.com/STCPay/" target="_blank" rel="noopener noreferrer" class="social-icons">
                 <img src="<?php echo get_bloginfo('template_directory'); ?>/images/facebook.png" alt="facebook logo"/>
@@ -49,7 +49,7 @@
                 <img src="<?php echo get_bloginfo('template_directory'); ?>/images/linkedin.png" alt="linkedin logo"/>
               </a>
             </div>
-            <div class="cta__app--title">Download Our Application</div>
+            <div class="cta__app--title" id="app-title">Download Our Application</div>
             <div class="cta__app--icons">
               <a href="https://play.google.com/store/apps/details?id=sa.com.stcpay" target="_blank" rel="noopener noreferrer" class="app-icons">
                 <img src="<?php echo get_bloginfo('template_directory'); ?>/images/play-store.png" alt="google play logo" />
@@ -63,7 +63,7 @@
         <div class="copyright">
           <div class="copyright__info">
             <img class="copyright__info--logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/footerlogo.png" alt="brand footer logo" />
-            <span class="copyright__info--text">
+            <span class="copyright__info--text" id="copyright-text">
               Copyright © 2019 Saudi Digital Payment Company All rights reserved.
             </span>
           </div>

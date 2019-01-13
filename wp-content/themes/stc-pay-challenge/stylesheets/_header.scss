@@ -22,7 +22,11 @@
   &__menu {
     ul {
       display: flex;
-    }    
+    }
+
+    .current_page_item > a {
+      color: $secondaryFontColor !important;
+    }
 
     .menu-item {
       list-style: none;

@@ -33,4 +33,10 @@
   .wpcf7-response-output, .wpcf7-not-valid-tip, .wpcf7-form {
     direction: rtl;
   }
+
+  .form-header {
+    &__desc {
+      direction: rtl;
+    }
+  }
 }

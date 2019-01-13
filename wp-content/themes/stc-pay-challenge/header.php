@@ -34,18 +34,16 @@
             alt="language icon"
             class="language__icon"
           />
-          <div class="language__text">العربية</div>
+          <div class="language__text" id="language-switcher">العربية</div>
         </div>
       </div>
       <header class="header">
         <nav class="header__menu">
-          <!-- <a class="menu-item"> -->
-            <?php wp_nav_menu( array( 
-              'sort_column' => 'menu_order',
-              'theme_location' => 'header-menu',
-              'menu_class' => 'menu-item'
-            ) ); ?>
-          <!-- </a> -->
+          <?php wp_nav_menu( array( 
+            'sort_column' => 'menu_order',
+            'theme_location' => 'header-menu',
+            'menu_class' => 'menu-item'
+          ) ); ?>
         </nav>
         <img class="header__logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.png" />
       </header>

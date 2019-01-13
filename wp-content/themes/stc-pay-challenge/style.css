@@ -89,6 +89,8 @@ h6 {
   margin-bottom: 3.4rem; }
   .header__menu ul {
     display: flex; }
+  .header__menu .current_page_item > a {
+    color: #da3f7b !important; }
   .header__menu .menu-item {
     list-style: none;
     margin-left: 3rem; }
@@ -341,6 +343,9 @@ h6 {
 .wpcf7-form p {
   margin-top: 1rem; }
 
+#form-rtl {
+  display: none; }
+
 .rtl .stc-gradient {
   background-image: linear-gradient(to left, #552b79, #552b79 20%, #d8127e 56%, #e9822c 79%, #f8c43a); }
 .rtl .header {
@@ -373,6 +378,8 @@ h6 {
 .rtl .close {
   left: 3%; }
 .rtl .wpcf7-response-output, .rtl .wpcf7-not-valid-tip, .rtl .wpcf7-form {
+  direction: rtl; }
+.rtl .form-header__desc {
   direction: rtl; }
 
 .rtl .footer__menu--links {
