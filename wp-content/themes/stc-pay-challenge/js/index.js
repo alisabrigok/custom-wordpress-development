@@ -3,7 +3,7 @@ var MERCHANTS_API = 'https://www.stcpay.com.sa/challenge/merchants';
 var $languageContainer = $('#language-container');
 var $contentContainer = $('#content-container');
 
-var isRtlEnabled = localStorage.getItem('isRTL');
+var isRtlEnabled = localStorage.getItem('isRTL') && window.location.href.split('/').includes('ar');
 
 if (isRtlEnabled) {
   $contentContainer.addClass('rtl');
