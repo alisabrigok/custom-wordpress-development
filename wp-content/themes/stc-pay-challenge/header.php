@@ -20,7 +20,7 @@
       sizes="16x16 32x32"
       href="<?php echo get_bloginfo('template_directory'); ?>/images/favicon.ico"
     />
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsoAUjJEkd17dakXlU69BIYwUtEH0jRfg&libraries=geometry"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=enterKeyHere&libraries=geometry"></script>
     <script type="text/javascript" src="<?php echo get_bloginfo('template_directory'); ?>/js/gmaps.js"></script>
     <?php wp_head();?>
   </head>
